@@ -3,7 +3,7 @@ Rummy
 
 A command line version of the card game Rummy with competitive Computer Agent written in C++.
 
-## Preface ##
+# Preface #
 Rummy is my Grandma's favorite card game to play.
 However, it takes at least two to play Rummy.
 Since my Grandpa passed, she has not been playing very much Rummy.
@@ -21,7 +21,7 @@ In the rest of this document, I will explain:
 * How the flow of the game works in my implementation.
 * My implementation choices and description of AI behind Computer Agent.
 
-## Rules of Rummy ##
+# Rules of Rummy #
 The rules in the **Basic Rummy** section were taken from http://www.pagat.com/rummy/rummy.html
 
 ## Basic Rummy ##
@@ -79,10 +79,24 @@ The game continues with further deals until a player reaches the points target t
 
 ## Variations in my Version ##
 
-## Implementation ##
+### Grandma's Rules ###
 
-### Game Flow ###
+### Additional Notes ###
 
-### User Turn ###
+# Game Flow #
 
-### Computer Agent ###
+## Initial Set Up ##
+
+## User Turn ##
+
+## Agent Turn ##
+
+# Implementation #
+
+## C++ ##
+
+## Computer Agent AI ##
+
+### Determine Best Hand ###
+
+### Drop Worst Card ###
