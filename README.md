@@ -5,7 +5,21 @@ A command line version of the card game Rummy with competitive Computer Agent wr
 
 ## Preface ##
 Rummy is my Grandma's favorite card game to play.
-(must fill in rest)
+However, it takes at least two to play Rummy.
+Since my Grandpa passed, she has not been playing very much Rummy.
+
+Last Summer, I wrote this game in my spare time.
+The game has a computer agent, so a player can play it alone.
+I would argue that the agent is competitive.
+Although I have won games here and there, I have never won a best of 7 series.
+
+On 4th Of July, I showed the game to Grandma.
+She was able to bring out a few bugs in the game which I have since fixed.
+
+In the rest of this document, I will explain:
+* The rules of rummy and how Grandma's rules and my game's rules differ.
+* How the flow of the game works in my implementation.
+* My implementation choices and description of AI behind Computer Agent.
 
 ## Rules of Rummy ##
 The rules in the **Basic Rummy** section were taken from http://www.pagat.com/rummy/rummy.html
@@ -56,13 +70,10 @@ A player wins an individual hand by either melding, laying off, or discarding al
 ### Scoring ###
 When a player goes out, the other players add up the value of all the cards still remaining in their hands, as follows:
 
-  *Face cards (K,Q,J) are worth 10 points each.
-
-  *Aces are worth 1 point each.
-
-  *Number Cards are worth their face value - for example a six is worth 6 points, a four is 4 points, and so on.
-
-  *The total value of all the cards in the hands of the other players is added to the winner's cumulative score.
+* Face cards (K,Q,J) are worth 10 points each
+* Aces are worth 1 point each.
+* Number Cards are worth their face value - for example a six is worth 6 points, a four is 4 points, and so on.
+* The total value of all the cards in the hands of the other players is added to the winner's cumulative score.
 
 The game continues with further deals until a player reaches the points target that was decided before the game began, or until the agreed number of deals has been played.
 
